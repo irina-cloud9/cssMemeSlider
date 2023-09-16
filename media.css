@@ -1,2 +1,15 @@
 @media (max-width: 768px) {
+  .text__and__button {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    gap: 0.45rem;
+  }
 }
