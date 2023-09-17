@@ -10,7 +10,6 @@ body {
   max-height: 720vh;
   margin: 0 auto;
   background: #b0e0e6;
-  /* position: static; */
 }
 
 .container {
@@ -73,10 +72,6 @@ body {
   transition: 1s;
 }
 
-/* .text__slider {
-  display: none;
-} */
-
 .text__mem {
   font-size: 1.3rem;
   margin-top: 0.5rem;
@@ -115,4 +110,9 @@ body {
   transform: translate(45%, 45%);
   cursor: pointer;
   border: none;
+}
+
+.button__leo:hover {
+  background: #6495ed;
+  transition: all 0.3s linear;
 }
