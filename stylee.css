@@ -35,7 +35,11 @@ body {
   width: fit-content;
   align-items: center;
   height: 100%;
-  transition: 1s;
+}
+
+.s1,
+.c1 {
+  transition: margin-left 1s;
 }
 
 .images1,
@@ -97,10 +101,6 @@ body {
   cursor: pointer;
 }
 
-.slider__button__wrapper.active .button__leo {
-  background: #00bfff;
-}
-
 .button__leo {
   width: 1.5rem;
   height: 1.5rem;
@@ -114,4 +114,97 @@ body {
 .button__leo:hover {
   background: #6495ed;
   transition: all 0.3s linear;
+}
+
+#r1:checked ~ .slider > .wrapper > .images__wrapper > .s1,
+#r1:checked
+  ~ .slider
+  > .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: 0;
+}
+
+#r2:checked ~ .slider > .wrapper > .images__wrapper > .s1,
+#r2:checked
+  ~ .slider
+  > .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: -55vw;
+}
+
+#r3:checked ~ .slider > .wrapper > .images__wrapper > .s1,
+#r3:checked
+  ~ .slider
+  > .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: -110vw;
+}
+
+#r4:checked ~ .slider > .wrapper > .images__wrapper > .s1,
+#r4:checked
+  ~ .slider
+  > .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: -165vw;
+}
+
+input[name="slide"] {
+  visibility: hidden;
+  display: none;
+}
+
+#r1:checked ~ .text__and__button > .slider > .slider__button__wrapper > .d1 {
+  background-color: #00bfff;
+}
+
+#r2:checked ~ .text__and__button > .slider > .slider__button__wrapper > .d2 {
+  background-color: #00bfff;
+}
+
+#r3:checked ~ .text__and__button > .slider > .slider__button__wrapper > .d3 {
+  background-color: #00bfff;
+}
+
+#r4:checked ~ .text__and__button > .slider > .slider__button__wrapper > .d4 {
+  background-color: #00bfff;
+}
+
+#r1:checked
+  ~ .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: 0;
+}
+
+#r2:checked
+  ~ .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: -100%;
+}
+
+#r3:checked
+  ~ .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: -200%;
+}
+
+#r4:checked
+  ~ .text__and__button
+  > .slider__wrapper
+  > .text__slider__wrapper
+  > .c1 {
+  margin-left: -300%;
 }

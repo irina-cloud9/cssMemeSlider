@@ -10,74 +10,81 @@
       rel="stylesheet"
     />
     <title>Slider</title>
-    <script src="index.js" defer></script>
-    <script src="runWhenPageLoading.js" defer></script>
   </head>
 
   <body>
     <div class="container">
-      <div class="wrapper">
-        <div class="images__wrapper">
-          <div class="images__slider__wrapper">
-            <img
-              class="images1"
-              src="imgmem/Fuck it all...   I answer, it will be beautiful.png"
-              alt="1"
-            />
-          </div>
-          <div class="images__slider__wrapper">
-            <img
-              class="images2"
-              src="imgmem/When you spend the last hundred in the club.....jpg"
-              alt="2"
-            />
-          </div>
-          <div class="images__slider__wrapper">
-            <img
-              class="images3"
-              src="imgmem/In search of a beautiful life....jpg"
-              alt="3"
-            />
-          </div>
-          <div class="images__slider__wrapper">
-            <img class="images4" src="imgmem/Think like me.webp" alt="4" />
+      <input type="radio" name="slide" id="r1" checked />
+      <input type="radio" name="slide" id="r2" />
+      <input type="radio" name="slide" id="r3" />
+      <input type="radio" name="slide" id="r4" />
+
+      <div class="slider">
+        <div class="wrapper">
+          <div class="images__wrapper">
+            <div class="images__slider__wrapper s1">
+              <img
+                class="images1"
+                src="imgmem/Fuck it all...   I answer, it will be beautiful.png"
+                alt="1"
+              />
+            </div>
+            <div class="images__slider__wrapper">
+              <img
+                class="images2"
+                src="imgmem/When you spend the last hundred in the club.....jpg"
+                alt="2"
+              />
+            </div>
+            <div class="images__slider__wrapper">
+              <img
+                class="images3"
+                src="imgmem/In search of a beautiful life....jpg"
+                alt="3"
+              />
+            </div>
+            <div class="images__slider__wrapper">
+              <img class="images4" src="imgmem/Think like me.webp" alt="4" />
+            </div>
           </div>
         </div>
       </div>
+
       <div class="text__and__button">
         <div class="slider__wrapper">
           <div class="text__slider__wrapper">
-            <div class="text__slider">
+            <div class="text__slider c1" id="c1">
               <h1 class="text__mem">
                 Fuck it all...I answer, it will be beautiful!
               </h1>
             </div>
-            <div class="text__slider">
+            <div class="text__slider c2" id="c1">
               <h1 class="text__mem">
                 When you spend the last hundred in the club...!
               </h1>
             </div>
-            <div class="text__slider">
+            <div class="text__slider c3" id="c1">
               <h1 class="text__mem">In search of a beautiful life?</h1>
             </div>
-            <div class="text__slider">
+            <div class="text__slider c4" id="c1">
               <h1 class="text__mem">Think like me!</h1>
             </div>
           </div>
         </div>
+
         <div class="slider">
-          <div class="slider__button__wrapper active">
-            <button class="button__leo"></button>
-          </div>
-          <div class="slider__button__wrapper">
-            <button class="button__leo"></button>
-          </div>
-          <div class="slider__button__wrapper">
-            <button class="button__leo"></button>
-          </div>
-          <div class="slider__button__wrapper">
-            <button class="button__leo"></button>
-          </div>
+          <label class="slider__button__wrapper" for="r1">
+            <div class="button__leo d1"></div>
+          </label>
+          <label class="slider__button__wrapper" for="r2">
+            <div class="button__leo d2"></div>
+          </label>
+          <label class="slider__button__wrapper" for="r3">
+            <div class="button__leo d3"></div>
+          </label>
+          <label class="slider__button__wrapper" for="r4">
+            <div class="button__leo d4"></div>
+          </label>
         </div>
       </div>
     </div>
